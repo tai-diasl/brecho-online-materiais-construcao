@@ -1,0 +1,92 @@
+:root {
+  --verde-escuro: #137917;
+  --verde: #4CAF50;
+  --laranja: #FF9800;
+  --fundo-claro: #ffdca7;
+  --texto-escuro: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--fundo-claro);
+  color: var(--texto-escuro);
+  line-height: 1.6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin: 30px 0 20px;
+}
+
+h1 {
+  color: var(--verde);
+  font-size: 1.8rem;
+  padding: 0 10px;
+}
+
+h2 {
+  color: var(--verde-escuro);
+  font-size: 2rem;
+  padding: 0 10px;
+}
+
+p {
+  text-align: center;
+}
+
+/* Vídeo */
+video {
+  height: 100vh;
+  max-height: 90vh;
+  width: auto;
+  max-width: 100%;
+  border: 4px solid var(--laranja);
+  border-radius: 30px;
+  margin-bottom: 40px;
+  display: block;
+}
+
+footer {
+  margin-top: 30px;
+  color: var(--verde);
+  ;
+}
+
+/* Media Queries */
+/* Telas maiores (tablet e desktop) */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 0 5%;
+  }
+
+  video {
+    max-width: 720px;
+  }
+}
+
+/* Telas muito grandes (desktop widescreen) */
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 2.5rem;
+    margin: 0 10%;
+  }
+}
